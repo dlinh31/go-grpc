@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+
 	pb "github.com/dlinh31/go-grpc/proto"
 
 	"google.golang.org/grpc"
@@ -24,5 +25,5 @@ func main(){
 	}
 
 	// callSayHello(client)
-	callSayHelloServerStream(client, names)
+	CallSayHelloServerStream(client, names)
 }
